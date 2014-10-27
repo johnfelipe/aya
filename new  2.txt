@@ -1,0 +1,7 @@
+<tr>
+                  <td width="13%" align="center">Linea Fin Rubrica</td>
+                  <td width="87%"><span id="sprytextarea5">
+                  <label for="textarea5"></label>
+                  <textarea name="textarea5" id="textarea5" cols="60" rows="5"><?php echo $row_acuerdo['act_rubr']; ?></textarea>
+                  <span id="countsprytextarea5">&nbsp;</span><span class="textareaRequiredMsg">Se necesita un valor.</span><span class="textareaMaxCharsMsg">*.</span></span></td>
+                </tr>

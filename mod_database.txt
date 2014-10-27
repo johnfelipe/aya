@@ -1,0 +1,23 @@
+modificaciones a la base de datos
+
+--modifcar tabla datos agregar  al final
+proc_legitimo	int(2)
+
+
+
+--tabla nueva
+CREATE TABLE `libro` (
+  `id_libro` int(11) NOT NULL auto_increment primary key,
+  `lib_anio` varchar(5) collate utf8_unicode_ci NOT NULL,
+  `libro_descrip` varchar(50) collate utf8_unicode_ci NOT NULL,
+  `lib_act` enum('1','0') collate utf8_unicode_ci NOT NULL,
+  `lib_conid` int(4) NOT NULL,
+  constraint fk1_libro foreign key (lib_conid) references per_consejo(per_consejo_id)
+
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ;
+
+----agregar libro a acta
+	agregar act_lb 	int(119
+	alter table actas add constraint fk_acta_lb foreign key (act_lb) references libro (id_libro)
+	
+--ejecutar add_deathnote.php OJO REEMPLAZAR VALOR BOOK A MANO
